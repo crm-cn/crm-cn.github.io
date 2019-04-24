@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>情报搜集要求</title>
+		<meta name="ViewPort" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <link rel="stylesheet" href="/style.css" type="text/css" />
+	</head>
+	<body>
+<h2><a href="/">CRM私立社</a></h2>
+<p>收集、记录、监控</p>
+<hr />
+<p><b>情报搜集要求</b> <a href="../">返回上一级</a></p>
+<hr />
+<p>收取情报的前提必须是大事件，影响程度达到该空间站，或影响到其他电子空间站导致其他玩家注意。没有达到该程度不可收集。</p>
+<p>大事件出现时请第一时间直接定位事件的相关人员，尽量收集相关人员公开的信息，以及事件的详细信息，并验证其信息的真实性，然后上交给编号R人员拼接情报。</p>
+<p>收集情报时不可干扰嫌疑极大的目标群体，也不可让目标群体注意到组织行踪，否则将强行使用██级清除在场人记忆。</p>
+<p>禁止过于收集涉及嫌疑目标未公开的隐私，否则将强行使用强制性记忆清除，并当场处决收集此情报的人员或将其编制到Temp分类。</p>
+<p>为了防止来自外星对本星球的敌意与纠纷，以及防止来自本星球的政治约束，禁止收集来自外星的情报，以及禁止收集涉及本星球的政治情报，否则将当做谋反人员直接处决。</p>
+<br/>
+<h4>如果在编人员做出以下动作将直接当场处决或编制到Temp分类：</h4>
+<ol>
+	<li>自行参与手动扩大事件。</li>
+	<li>自行伪造事件虚假信息。</li>
+	<li>暴露组织行踪。</li>
+	<li>未经许可通过非法渠道收集涉及隐私等其他未公开情报。</li>
+	<li>收集来自其他星球的情报以及其外星人的隐私，使用外星时间等。</li>
+	<li>收集涉及政治内容的情报。</li>
+</ol>
+<p>目前时间是：<span id="Time"></span>。</p>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+date=new Date();
+var year=date.getFullYear();
+var month=date.getMonth()+1;
+var day=date.getDate();
+document.getElementById("Time").innerHTML=year*4+"刻年"+(month%4)+1+"月"+day+"日";
+}
+show_date_time();
+</script>
+<script src="/link.js" type="text/javascript"></script>
+	</body>
+</html>
